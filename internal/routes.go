@@ -23,5 +23,5 @@ func newServer(router *gin.Engine, awsSession *session.Session, awsConfig *aws.C
 func (s *Server) routes() {
 	v1 := s.router.Group("/v1")
 	v1.GET("/allPolls", s.allPollsHandler)
-	v1.POST("/createPoll", s.createPollHandler)
+	// v1.POST("/createPoll", s.createPollHandler)
 }

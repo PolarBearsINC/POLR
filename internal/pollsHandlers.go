@@ -1,7 +1,12 @@
 package internal
 
-import "github.com/gin-gonic/gin"
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
 
 func (s *Server) allPollsHandler(c *gin.Context) {
-	ctx := c.Request.Context()
+	// ctx := c.Request.Context()
+	c.Status(http.StatusCreated)
 }
