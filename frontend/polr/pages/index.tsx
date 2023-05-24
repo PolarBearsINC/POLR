@@ -15,11 +15,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <h1>POLR</h1>
         <div className={styles.description}>
           <p>
             Nick is cute
             &nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
+            <code className={styles.code}>POLAR BEARS</code>
           </p>
           <div>
             <a
@@ -27,13 +28,13 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              Sponsored By{' '}
               <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
+                src="/vlad.png"
+                alt="Vlad's Pic"
                 className={styles.vercelLogo}
-                width={100}
-                height={24}
+                width={200}
+                height={200}
                 priority
               />
             </a>
@@ -43,52 +44,17 @@ export default function Home() {
         <div className={styles.center}>
           <Image
             className={styles.logo}
-            src="/next.svg"
+            src="/pb.jpg"
             alt="Next.js Logo"
-            width={180}
-            height={37}
+            width={1000}
+            height={1000}
             priority
           />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
+         
         </div>
 
         <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
+          
       
 
         </div>
