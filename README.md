@@ -3,4 +3,4 @@ is a polling application designed to make polling fun. POLR allows users to ask 
 
 POLR Backend = Go
 POLR Frontend = Next.js
-POLR Database = TBD(MySQL)
+POLR Database = PlanetScale
