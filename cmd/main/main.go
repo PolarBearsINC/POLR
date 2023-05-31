@@ -8,6 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/joho/godotenv"
+	"github.com/polarbearsinc/polr/internal"
 )
 
 func main() {
@@ -20,8 +21,8 @@ func main() {
 	if err := db.Ping(); err != nil {
 		log.Fatalf("failed to ping: %v", err)
 	}
-	log.Println("Successfully connected to PlanetScale!")
 	// ctx := context.Background()
 	router := gin.Default()
-	router.Run("localhost:8080")
+	s := internal.NewServer(router, db)
+	s.Run()
 }

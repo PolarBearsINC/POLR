@@ -1,27 +1,30 @@
 package internal
 
 import (
-	"github.com/aws/aws-sdk-go-v2/aws"
-	"github.com/aws/aws-sdk-go/aws/session"
+	"database/sql"
+
 	"github.com/gin-gonic/gin"
 )
 
 type Server struct {
-	router     *gin.Engine
-	awsSession *session.Session
-	awsConfig  *aws.Config
+	Router *gin.Engine
+	db     *sql.DB
 }
 
-func newServer(router *gin.Engine, awsSession *session.Session, awsConfig *aws.Config) *Server {
+func NewServer(router *gin.Engine, db *sql.DB) *Server {
 	return &Server{
-		router:     router,
-		awsSession: awsSession,
-		awsConfig:  awsConfig,
+		Router: router,
+		db:     db,
 	}
 }
 
 func (s *Server) routes() {
-	v1 := s.router.Group("/v1")
-	v1.GET("/allPolls", s.allPollsHandler)
-	// v1.POST("/createPoll", s.createPollHandler)
+	v1 := s.Router.Group("/v1")
+	// v1.GET("/allPolls", s.allPollsHandler)
+	v1.POST("/createPoll", s.createPollHandler)
+}
+
+func (s *Server) Run() {
+	s.routes()
+	s.Router.Run("localhost:8080")
 }
