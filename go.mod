@@ -1,4 +1,4 @@
-module Poller
+module polr
 
 go 1.20
 
