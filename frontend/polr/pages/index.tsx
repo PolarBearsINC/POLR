@@ -32,8 +32,8 @@ export default function Home() {
             >
               Sponsored By{' '}
               <Image
-                src="/vlad.png"
-                alt="Vlad's Pic"
+                src="/POLRBear.png"
+                alt="POLRBear Pic"
                 className={styles.vercelLogo}
                 width={200}
                 height={200}
