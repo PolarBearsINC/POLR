@@ -257,14 +257,15 @@
   }
 }
 
+/* Remove invert filters - using custom theme system instead */
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
-    filter: invert(1);
+ 
   }
 
   .logo,
   .thirteen img {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+    
   }
 }
 
@@ -276,3 +277,67 @@
     transform: rotate(0deg);
   }
 }
+
+/* About page and content styles */
+.contentSection {
+  max-width: 800px;
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  text-align: left;
+}
+
+.contentSection h2 {
+  margin-top: 0;
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+.contentSection p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.contentSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contentSection li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  color: var(--text-secondary);
+  position: relative;
+}
+
+.contentSection li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.backButton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--bg-primary);
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: var(--bg-secondary);
+  transform: translateX(-4px);
+}
+
+.backButton:active {
+  transform: translateX(-2px);
+}
+
