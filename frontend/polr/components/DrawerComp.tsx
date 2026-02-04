@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '@/styles/Drawer.module.css'
 
 export default function DrawerComp() {
@@ -39,10 +40,10 @@ export default function DrawerComp() {
         </div>
         
         <nav className={styles.drawerNav}>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/Polls">Polls</a>
-          <a href="/contact">Contact</a>
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/pollPage">Polls</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
       </div>
     </>
