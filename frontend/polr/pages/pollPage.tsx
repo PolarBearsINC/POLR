@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { useState } from 'react'
-import DrawerComp from '@/components/DrawerComp'
-import { ThemeToggle } from '@/components/ThemeToggle'
-import PollCard from '@/components/pollCard'
+import DrawerComp from '@/components/drawer/DrawerComp'
+import { ThemeToggle } from '@/components/appBar/ThemeToggle'
+import PollCard from '@/components/pollComp/pollCard'
 import styles from '@/styles/PollPage.module.css'
 
 interface Poll {

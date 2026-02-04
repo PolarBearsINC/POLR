@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import DrawerComp from '@/components/DrawerComp'
-import { ThemeToggle } from '@/components/ThemeToggle'
+import DrawerComp from '@/components/drawer/DrawerComp'
+import { ThemeToggle } from '@/components/appBar/ThemeToggle'
 import styles from '@/styles/About.module.css'
 
 export default function About() {
